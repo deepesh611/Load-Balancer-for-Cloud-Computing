@@ -1,0 +1,5 @@
+# Tools required to perform the project.
+
+curl
+nginx
+python3-pip
