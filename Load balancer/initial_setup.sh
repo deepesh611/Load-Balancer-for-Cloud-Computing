@@ -20,14 +20,14 @@ sudo apt update && sudo apt upgrade -y
 echo -e "\n${GREEN}✅ Update and upgrade complete.${NC}\n"
 
 # Install the required tools from tools.txt
-if [[ -f tools.txt ]]; then
+if [[ -f tools.txt ]]; then #checking if the tools file exists
     echo -e "${BLUE}📂 Found tools.txt. Installing required packages...${NC}\n"
     grep -vE '^\s*#|^\s*$' tools.txt | xargs sudo apt install -y
     echo -e "\n${GREEN}✅ Installation complete.${NC}\n"
 
     # Enable the required services
     echo -e "${BLUE}🔌 Enabling required services...${NC}\n"
-    sudo systenmctl start nginx
+    sudo systemctl start nginx
     sudo systemctl enable nginx
 else
     echo -e "\n${RED}❌ tools.txt not found! Exiting...${NC}\n"
