@@ -91,3 +91,10 @@ Both servers use the same Dockerfile to serve their respective HTML pages. Pages
 - Restart policy is set to `unless-stopped` for container resilience.
 - Keepalived monitors the health and performs VIP handoff.
 - No external database is used—only static HTML.
+
+## Results
+
+<img src="./assets/Screenshot 2025-04-11 154300.png">
+<img src="./assets/Screenshot 2025-04-11 154315.png">
+<img src="./assets/Screenshot 2025-04-11 154241.png">
+<img src="./assets/Screenshot 2025-04-11 154832.png">
