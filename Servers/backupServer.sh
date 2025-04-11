@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-VIRTUAL_IP="192.168.1.100"  # Change to your Virtual IP
+VIRTUAL_IP="192.168.154.100"  # Change to your Virtual IP
 NETWORK_INTERFACE="eth0"  # Change if using Wi-Fi or another interface
 AUTH_PASS="mysecurepassword"  # Change for security
 PRIORITY=90  # Lower priority for Backup
